@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span></span>Menu</a>
+        </div>
+        <nav> 
+            <nav class="sidebar">
+                <ul class="Menu">
+                  <li><a href="#">Primer Semestre</a>
+                  <ul class="subMenu">
+                    <li><a class="tablink" onclick="openTab(event, 'tab1')">Unidad 1</a></li>
+                    <li><a href="#">Unidad 2</a></li>
+                    <li><a href="#">Unidad 3</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="#">Segundo Semestre</a>
+                  <ul class="subMenu">
+                    <li><a href="#">Unidad 1</a></li>
+                    <li><a href="#">Unidad 2</a></li>
+                    <li><a href="#">Unidad 3</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="#">Tercer Semestre</a>
+                    <ul class="subMenu">
+                      <li><a href="#">Unidad 1</a></li>
+                      <li><a href="#">Unidad 2</a></li>
+                      <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Cuarto Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Quinto Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Sexto Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Septimo Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Octavo Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Noveno Semestre</a>
+                        <ul class="subMenu">
+                          <li><a href="#">Unidad 1</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                          <li><a href="#">Unidad 2</a></li>
+                          <li><a href="#">Unidad 3</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                
+              </nav>
+            
+        </nav>
+    </header>
+    <main>
+      <!--Calculo 1 TAB 1-->
+      <div id="tab1" class="tabcontent">
+        <h1 style="text-align: center;   margin-bottom: 20px;">Docentes - Calculo I</h1>
+        <div class="title-container">
+            <h3>Carlos Miranda</h3>
+            <button class="custom-button" class="tablink" onclick="openTab(event, 'tab3')">Ver</button>
+            <button class="custom-button" class="tablink" onclick="openTab(event, 'tab2')">Opinar</button>
+        </div>
+        <div class="title-container">
+            <h3>Edwin Callysaya</h3>
+            <button class="custom-button" class="tablink" onclick="openTab(event, 'tab3')">Ver</button>
+            <button class="custom-button" class="tablink" onclick="openTab(event, 'tab2')">Opinar</button>
+        </div>
+        <div class="comment-container">
+          <h3>Comentarios</h3>
+          <div class="comment-public">
+              <textarea id="commentInput" placeholder="Escribe un comentario..."></textarea>
+              <button class="custom-button" onclick="publicarComentario()">Publicar</button>
+          </div>
+          <div class="comment-section" id="commentSection">
+              <!-- Aquí se mostrarán los comentarios -->
+              <div class="comment">
+                  <span class="comment-text">Este es un comentario de ejemplo.</span>
+              </div>
+          </div>
+      </div>
+           
+      </div>
+    </main>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

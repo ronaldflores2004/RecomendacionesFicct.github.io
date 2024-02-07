@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fffffa;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 100%;
+    max-width: 2000px;
+    margin: 20px auto;
+    background: blue;
+    width: 30%;
+    height: 100%;
+    left:-100%;
+    margin:0%;
+    position: fixed;
+}
+.menu_bar{
+    display: none;
+}
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration:none;
+}
+header nav ul li span{
+    margin-right: 10px;
+}
+header nav ul li a:hover{
+    background: #037E8C;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+    header nav{
+        width: 40%;
+        height: 100%;
+        left:-100%;
+        margin:0%;
+        position: fixed;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom:1px solid rgba(255,255,255,.3);
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        background: rgb(139, 0, 0);
+        color:#fff;
+        text-decoration: none;
+        font-weight: bold;       
+        font-size: 25px;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+       .menu_bar span{
+        float:left;
+        font-size: 35px;
+    }
+    .parrafo{
+        color: purple;
+        margin: 0 auto;
+        max-width: 6000px;
+        padding: 30px 30px;
+    }
+    /* Estilos para el submenú */
+
+    .subMenu{
+    list-style: none;
+    padding-left: 10px;
+    display: none; /* Ocultar submenú por defecto */
+  }
+  
+  .subMenu li{
+    margin-bottom: 2px; /* Reducir el espacio entre ítems del submenú */
+  }
+  
+  .subMenu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; /* Reducir el relleno para achicar el tamaño de los enlaces */
+    display: block;
+  }
+  
+  /* Mostrar submenú cuando el enlace padre está activo */
+  .Menu li:hover .subMenu {
+    display: block;
+  }
+  
+  /* Estilos adicionales para los ítems del menú principal */
+  .Menu li {
+    margin-bottom: 10px; /* Reducir el espacio entre ítems del menú principal */
+  }
+  
+  .Menu a {
+    padding: 5px; /* Reducir el relleno para achicar el tamaño de los enlaces del menú principal */
+  }
+  /* Estilos PARA COMENTARIO*/
+    .comment-container {
+    max-width: 20px;
+    margin: 20px auto;
+    background-color:white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h3{
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .comment-public {
+    display: flex;
+    align-items: center;
+    font-size: 1px;
+    }
+
+    textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 8px;
+    
+    }
+
+    .custom-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    }
+
+    .comment-section {
+    border-top: 1px solid #ccc;
+    }
+
+    .comment {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+    }
+
+    .comment-text {
+    font-size: 10px;
+    }
+    .title-container {
+    text-align: center;   
+    }
+    .title-container h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    }
+    .public{
+    text-align: center;
+    }
+    .custom-button {
+    margin-bottom: 500px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    }
+
+    .custom-select {
+        display: flex;
+    flex-direction: column;
+    }
+ 
+
+    /* Estilos del checkbox y etiqueta */
+    .custom-select label {
+    margin: 5px;
+    cursor: pointer;
+    }
+    /* Estilo del checkbox marcado */
+    .custom-select input[type="checkbox"]:checked + label {
+    background-color: #f2f2f2;
+    }
+    .decorated-result{
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+    border: 2px solid #004085;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+}
+
