@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
     <style>
         /* Ajuste para que el menú hamburguesa funcione en pantallas móviles */
+        /* Ajuste para que el menú hamburguesa funcione en pantallas móviles */
         @media (max-width: 768px) {
             .sidebar-mini.sidebar-collapse .content-wrapper {
                 margin-left: 0 !important;
             }
+
+            .wrapper {
+                height: 100vh;
+            }
+
             .content-wrapper {
                 position: absolute;
                 left: 0;
                 right: 0;
+                bottom: 0;
+                top: 0;
+                height: 100vh;
+                /* Establece la altura del contenedor al 100% del viewport */
+                overflow-y: auto;
+                /* Añade desplazamiento vertical si es necesario */
                 transition: margin-left 0.3s ease;
             }
+
             .content-wrapper.sidebar-open {
-                margin-left: 250px; /* Ancho del menú deslizante */
+                margin-left: 250px;
+                /* Ancho del menú deslizante */
             }
         }
+
+
         /* Estilos para las vistas de contenido */
         .tabcontent {
             display: none;
         }
+
         .active {
             display: block;
         }
 
         /* Estilo para el sidebar */
         .main-sidebar {
-    background-color: #8B0000; /* Rojo oscuro */
-}
-
+            background-color: #8B0000;
+            /* Rojo oscuro */
+        }
     </style>
 </head>
+
 <body class="sidebar-mini sidebar-collapse">
     <div class="wrapper">
         <!-- Navbar -->
@@ -53,18 +72,20 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-           
+
             <a href="#" class="brand-link">
-                <img src="\logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8; width: 35px;">
+                <img src="\logo.png" alt="Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8; width: 35px;">
                 <span class="brand-text font-weight-bold" style="margin-center: 10px;">Recomendacion</span>
             </a>
-            
+
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                             with font-awesome or any other icon font library -->
                         <li class="nav-item">
@@ -156,7 +177,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#tab2" class="nav-link" data-toggle="tab" onclick="openTab(event, 'subopcion1_tab2')">
+                                    <a href="#tab2" class="nav-link" data-toggle="tab"
+                                        onclick="openTab(event, 'subopcion1_tab2')">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Subopción 2</p>
                                     </a>
@@ -191,43 +213,43 @@
                         <h1>Desarrolladores</h1>
                         <p>This is the content for the Settings tab.</p>
                     </div>
-                       <!-- Semestres -->
+                    <!-- Semestres -->
                     <div id="primero" class="tabcontent">
                         <h1>Primer Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="segundo" class="tabcontent">
                         <h1>Segundo Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="tercero" class="tabcontent">
                         <h1>Tercer Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="cuarto" class="tabcontent">
                         <h1>Cuarto Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="quinto" class="tabcontent">
                         <h1>Quinto Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="sexto" class="tabcontent">
                         <h1>Sexto Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="septimo" class="tabcontent">
                         <h1>Septimo Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="octavo" class="tabcontent">
                         <h1>Octavo Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                     <div id="noveno" class="tabcontent">
                         <h1>Noveno Semestre</h1>
                         <p>This is the content for the Settings tab.</p>
-                    </div>  
+                    </div>
                 </div>
             </section>
             <!-- /.content -->
@@ -259,5 +281,5 @@
         }
     </script>
 </body>
-</html>
 
+</html>
