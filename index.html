@@ -89,7 +89,7 @@
             <a href="#" class="brand-link">
                 <img src="img\logo.png" alt="Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8; width: 35px;">
-                <span class="brand-text font-weight-bold" style="margin: 0 auto;">Recomendacion</span>
+                <span class="brand-text font-weight-bold" style="margin: 0 auto;">Recomendaciones</span>
             </a>
 
 
@@ -219,7 +219,7 @@
                         </li>
                         <!-- Add more menu items here -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" onclick="openTab(event, 'desarrolladores')">
+                            <a href="#" class="nav-link" onclick="openTab(event, 'grupos')">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Grupos Academicos
@@ -227,7 +227,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" onclick="openTab(event, 'desarrolladores')">
+                            <a href="#" class="nav-link" onclick="openTab(event, 'informaciones')">
                                 <i class="nav-icon fas fa-info-circle"></i>
                                 <p>
                                     Informaciones
@@ -248,8 +248,10 @@
                 <div class="container-fluid">
                     <!-- Dashboard Tab Content -->
                     <div id="dashboard" class="tabcontent active">
-                        <h1>Bievenido a la Pagina de Recomendaciones Ficct</h1>
-                        <p>This is the content for the Dashboard tab.</p>
+                        <div class="materia">
+                            <h3 style="font-weight: bold; text-align: center;">Bienvenido a la Pagina de Recomendaciones</h3>
+                            <p style="text-align: center; margin-top: -8px;">SupportFicct</p>
+                        </div>
                     </div>
                     <!-- Auxiliares Tab Content -->
                     <div id="oficiales" class="tabcontent">
@@ -312,6 +314,12 @@
                             <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
                         </div>
                     </div>
+                    <div id="grupos" class="tabcontent">
+                        
+                    </div>
+                    <div id="informaciones" class="tabcontent">
+                        
+                    </div>
                 </div>
             </section>
             <!-- /.content -->
@@ -351,11 +359,11 @@
                 })
                 .catch(error => console.error('Error al cargar la vista:', error));
         }
-
         // Llama a la función para mostrar las otras vistas al cargar la página
         mostrarOtraVista('/VistaAuxVoluntarios.html', 'voluntario');
         mostrarOtraVista('/VistaAuxOficiales.html', 'oficiales');
-
+        mostrarOtraVista('/VistaGrupos.html', 'grupos');
+        mostrarOtraVista('/VistaInformaciones.html', 'informaciones');
         //semestres
         mostrarOtraVista('Semestres/primero.html', 'primero');
         mostrarOtraVista('Semestres/segundo.html', 'segundo');
