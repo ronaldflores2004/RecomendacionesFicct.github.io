@@ -117,13 +117,32 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" onclick="openTab(event, 'auxiliares')">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-graduation-cap"></i>
                                 <p>
                                     Auxiliares
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <!-- Subopciones de la Opción 1 con Tabs -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" onclick="openTab(event, 'oficiales')">
+                                        <i class="nav-icon fas fa-user-tie"></i>
+                                        <p>Oficiales</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <!-- Subopciones de la Opción 1 con Tabs -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" onclick="openTab(event, 'voluntario')">
+                                        <i class="nav-icon fas fa-user-tie"></i>
+                                        <p>Voluntarios</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                   
                         <li class="nav-item has-treeview">
@@ -233,22 +252,10 @@
                         <p>This is the content for the Dashboard tab.</p>
                     </div>
                     <!-- Auxiliares Tab Content -->
-                    <div id="auxiliares" class="tabcontent">
+                    <div id="oficiales" class="tabcontent">
                         <div class="materia">
                             <h3 style="font-weight: bold; text-align: center;">AUXILIARES</h3>
                             <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
-                        </div>
-
-                        <div class="user-list" style="display: flex; justify-content: center;">
-                            <div class="user" style="display: flex; align-items: center; text-align: left;">
-                                <img src="img/DanielCastedo.jpg" alt="Foto de perfil" style="width: 100px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
-                                <div>
-                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Daniel Castedo</p>
-                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Programacion1,</p>
-                                    <p style="margin: 0; font-size: 0.9rem;">Metodos,Introduccion</p>
-                                    <a href="https://wa.me/+59176061697">Contactar</a>
-                                </div>
-                            </div>
                         </div>
                         <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
                             <div class="user" style="display: flex; align-items: center; text-align: left;">
@@ -263,11 +270,74 @@
                         </div>
                         <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
                             <div class="user" style="display: flex; align-items: center; text-align: left;">
+                                <img src="img/iafe.jpg" alt="Foto de perfil" style="width: 100px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
+                                <div>
+                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Jhafeth Cadima
+                                    </p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Estructuras,</p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Prob I,Ecuaciones</p>
+                                    <a href="https://wa.me/+59176061697">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
+                            <div class="user" style="display: flex; align-items: center; text-align: left;">
+                                <img src="img/erick.png" alt="Foto de perfil" style="width: 100px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
+                                <div>
+                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Erick Patton
+                                    </p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Sistemas de </p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Informacion I</p>
+                                    <a href="https://wa.me/+59176061697">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="voluntario" class="tabcontent">
+                        <div class="materia">
+                            <h3 style="font-weight: bold; text-align: center;">AUXILIARES</h3>
+                            <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
+                        </div>
+                        <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
+                            <div class="user" style="display: flex; align-items: center; text-align: left;">
+                                <img src="img/Eduardo.jpg" alt="Foto de perfil" style="width: 90px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
+                                <div>
+                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Eduardo</p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Introduccion</p>
+                                    <a href="https://wa.me/+59176061697">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
+                            <div class="user" style="display: flex; align-items: center; text-align: left;">
+                                <img src="img/DanielCastedo.jpg" alt="Foto de perfil" style="width: 100px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
+                                <div>
+                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Daniel Castedo</p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Programacion1,</p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Metodos,Introduccion</p>
+                                    <a href="https://wa.me/+59176061697">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
+                            <div class="user" style="display: flex; align-items: center; text-align: left;">
                                 <img src="img/OscarCruz.jpg" alt="Foto de perfil" style="width: 90px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
                                 <div>
                                     <p style="margin: 0; font-size: 1rem; font-weight: bold;">Oscar Cruz</p>
                                     <p style="margin: 0; font-size: 0.9rem;">Materias: Introduccion</p>
                                     <p style="margin: 0; font-size: 0.9rem;">Programacion1</p>
+                                    <a href="https://wa.me/+59176061697">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
+                            <div class="user" style="display: flex; align-items: center; text-align: left;">
+                                <img src="img/ronaldo.jpg" alt="Foto de perfil" style="width: 90px; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-right: 20px;">
+                                <div>
+                                    <p style="margin: 0; font-size: 1rem; font-weight: bold;">Ronaldo Riveros</p>
+                                    <p style="margin: 0; font-size: 0.9rem;">Materias: Intro, pro1, </p>
+                                    <p style="margin: 0; font-size: 0.9rem;">ed2, so1, base2, si1</p>
                                     <a href="https://wa.me/+59176061697">Contactar</a>
                                 </div>
                             </div>
